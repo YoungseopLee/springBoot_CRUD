@@ -9,6 +9,8 @@
 
 2. 게시글 조회
 
+<img width="250" alt="Screenshot 2023-11-30 at 11 09 18 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/5b37ac65-9830-4ec3-b3e1-31bc84368409">
+
 <img width="1398" alt="Screenshot 2023-11-30 at 8 13 33 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/6a2ba7d1-36ad-4410-9510-f00243bc8149">
 
 <img width="471" alt="Screenshot 2023-11-30 at 11 18 23 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/e956cbe9-f5f7-4ca7-bf6a-849b6410bf3c">
