@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<header>
+    <h1> CRUD Board </h1>
+    <!-- 네비게이션 바 추가 -->
+</header>
+<div class="main-content">
+    <table>
+        <thead>
+        <tr>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성시간</th>
+        </tr>
+        </thead>
+        <!-- board.html -->
+        <div class="create-post-button">
+            <a class="save-button" href="/posts/new">새 게시글 작성</a>
+        </div>
+
+        <tbody>
+        <tr th:each="post : ${posts}">
+            <td><a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}">제목</a></td>
+            <td th:text="${post.author}">작성자</td>
+            <td th:text="${#temporals.format(post.editTime, 'yyyy-MM-dd HH:mm')}">작성시간</td>
+            <td>
+                <a class="edit-button" th:href="@{/posts/edit/{id}(id=${post.id})}">편집</a>
+                <a class="delete-button" th:href="@{/posts/delete/{id}(id=${post.id})}">삭제</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>© 2023 게시판. All rights reserved.</p>
+</footer>
+</body>
+</html>
