@@ -22,7 +22,6 @@ public class PostService {
 
     // 게시글 저장
     public Post savePost(Post post) {
-        System.out.println("[PostService] call savePost & check post " + post);
         post.setEditTime(LocalDateTime.now());
         return postRepository.save(post);
     }
@@ -49,7 +48,6 @@ public class PostService {
 
     // 게시글 삭제
     public void deletePost(Long id) {
-        System.out.println("call deletePost!!!");
         postRepository.deleteById(id);
     }
 

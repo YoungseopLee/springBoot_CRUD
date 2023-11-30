@@ -48,12 +48,11 @@ public class BoardController {
     // 게시글 작성
     @PostMapping("/posts")
     public String addPost(@ModelAttribute Post post) {
-        System.out.println("[BoardController] call addPost & check post " + post);
         postService.savePost(post);
         return "redirect:/board";
     }
 
-    // 게시글 편집
+    // 게시글 편집 페이지 이동
     @GetMapping("/posts/edit/{id}")
     public String editPostForm(@PathVariable Long id, Model model) {
         Post post = postService.getPost(id);
@@ -61,6 +60,7 @@ public class BoardController {
         return "editPost";
     }
 
+    // 게시글 편집
     @PostMapping("/posts/edit/{id}")
     public String updatePost(@PathVariable Long id, @ModelAttribute Post post) {
         postService.updatePost(id, post);
