@@ -10,7 +10,7 @@
 
 <img width="640" alt="Screenshot 20<img width="471" alt="Screenshot 2023-11-30 at 11 18 23 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/e956cbe9-f5f7-4ca7-bf6a-849b6410bf3c">
 
-<img width="471" alt="Screenshot 2023-11-30 at 11 18 23 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/5b22c1f8-d0e7-46e2-82bc-e5e7e019bc27">
+<img width="640" alt="Screenshot 2023-11-30 at 11 18 19 PM" src="https://github.com/YoungseopLee/springBoot_CRUD/assets/73778056/03cb3fb8-e381-45eb-904f-e95cc6b4bb60">
 
 
 3. 게시글 편집
